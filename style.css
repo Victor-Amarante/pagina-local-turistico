@@ -1,0 +1,207 @@
+:root {
+    /* cores principais */
+    --background-default: #F5F4F0;
+    --border-primary: #D9D9D9;
+
+    /* cores de texto */
+    --text-primary: #1B1B1B;
+    --text-secondary: #333333;
+    --text-tertiary: #696969;
+    --text-headline: #E1624F;
+
+    /* cores de destaque */
+    --accent-blue: #0C51A7;
+    --accent-orange: #E95E10;
+    --accent-pink: #E5245E;
+    --accent-purple: #591B98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-default);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 88px 80px 48px 80px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 65px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* SEÇÃO PRINCIPAL COM TÍTULO */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+main > span {
+    color: var(--accent-orange);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main > h1 {
+    color: var(--text-primary);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* SEÇÃO COM DESCRIÇÃO DO LOCAL E IMAGEM */
+.description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 4px 0px;
+    align-items: center;
+}
+
+.description-container > img {
+    height: 660px;
+}
+
+.description-container > p {
+    height: 37px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.divider {
+    width: 1120px;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
+
+/* SEÇÃO COM LISTA DE PONTOS TURÍSTICOS PARA VISITAR */
+.travel-list {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.title-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.title-list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.title-list-content > span {
+    color: var(--text-headline);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title-list-content > h2 {
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.travel-list p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-lista-locais {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-end;
+}
+
+.card-travel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.card-content > h3 {
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card-content > p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-content > span {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 700;   
+}
+
+ul {
+    list-style-position: inside; 
+}
+
+.card-content li {
+    color: var(--accent-blue, #0C51A7);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.final-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#casais {
+    color: var(--accent-purple);
+  }
+  
+#familias {
+    color: var(--accent-pink);
+  }
+  
+#orcamento {
+    color: var(--accent-orange);
+  }
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
